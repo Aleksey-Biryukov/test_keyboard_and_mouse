@@ -1,0 +1,95 @@
+
+.mouse-visible {
+    display: block;
+}
+
+.mouse-not-visible{
+    display: none;
+}
+
+.mouse-container__img {
+    pointer-events: none;
+}
+
+.mouse__mouse-container{
+    position: relative;
+    display: inline-block;
+}
+
+.mouse-container__mouse-zone {
+    position: absolute;
+    transform: rotateZ(-5deg);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.mouse-container__middle-zone{
+    position: absolute;
+    transition: 0.2s;
+    background-color: #11FF00;
+    opacity: 0;
+}
+
+#middle-btn{
+    top: 75px;
+    left: 381px;
+    width: 40px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#left-btn {
+    background-image: url(../../img/svg/fingerprint.svg);
+    background-size: cover;
+    top: 50px;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#right-btn {
+    background-image: url(../../img/svg/fingerprint.svg);
+    background-size: cover;
+    top: 50px;
+    left: 400px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.mouse-container__mouse-wheel-up-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: rotateX(180deg);
+    top: -10px;
+    left: 350px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../img/svg/arrow-for-mouse.svg);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.mouse-container__mouse-wheel-down-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    left: 350px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../img/svg/arrow-for-mouse.svg);
+    transition: 0.2s;
+    background-size: cover;
+    opacity: 0;
+}
+
+.arrow-mouse-active{
+    opacity: 1;
+}

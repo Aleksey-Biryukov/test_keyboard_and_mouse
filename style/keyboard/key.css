@@ -1,0 +1,101 @@
+
+.key{
+    background-color:var(--background-key);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: var(--width-key);
+    height: var(--height-key);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.active-key{
+    background-color: var(--active-color);
+    
+}
+.used-key{
+    background-color: #00c5bb;
+    transition: 0.2s;
+}
+
+.f-key{
+    margin-bottom: 10px;
+}
+
+.f1{
+    margin-left: 50px;
+}
+
+.f5,
+.f9 {
+    margin-left: 25px;
+}
+
+.backspace,
+.tab,
+.caps-lock,
+.enter {
+    width: auto;
+    flex: 1;
+    min-width: 100px;
+}
+
+.shift,
+.key-zero {
+    width: auto;
+    flex: 1;
+    min-width: 100px;
+}
+
+.menu-key{
+    background-image: url(../../img/svg/menu-key.svg);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.arrow-key-up{
+    background-image: url(../../img/svg/arrow-up.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrow-key-left{
+    background-image: url(../../img/svg/arrow-left.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrow-key-down{
+    background-image: url(../../img/svg/arrow-down.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrow-key-right{
+    background-image: url(../../img/svg/arrow-right.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.space{
+    width: auto;
+    flex: 1;
+    min-width: 400px;
+}
+ 
+.key-num-plus{
+    height: auto;
+    flex: 1;
+    min-height: 100px;
+}
+
+
+.key-num-enter{
+    height: auto;
+    flex: 1;
+    min-height: 100px;
+}

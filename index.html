@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test keyboard and mouse</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+        <div class="main">
+            <div class="main__switch">
+                <button class="switch__button-device-keyboard button-device">
+                </button>
+                <button class="switch__button-device-mouse button-device">
+                </button>
+            </div>
+            <div class="main__window-log">    
+            </div>
+            <div class="main__mouse mouse-not-visible">
+                <div class="mouse__mouse-container">
+                    <img class="mouse-container__img" src="./img/mouse.png" alt="mouse" width="800px" height="600px">
+                    <div id="left-btn" class="mouse-container__mouse-zone"></div>
+                    <div id="middle-btn" class="mouse-container__middle-zone"></div>
+                    <div id="right-btn" class="mouse-container__mouse-zone"></div>
+                    <div class="mouse-container__mouse-wheel-up-img"></div>
+                    <div class="mouse-container__mouse-wheel-down-img"></div>
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="keyboard__main">
+                    <div class="main__row f-key">
+                        <div class="key" data-code="Escape">Esc</div>
+                        <div class="key f1" data-code="F1">F1</div>
+                        <div class="key" data-code="F2">F2</div>
+                        <div class="key" data-code="F3">F3</div>
+                        <div class="key" data-code="F4">F4</div>
+                        <div class="key f5" data-code="F5">F5</div>
+                        <div class="key" data-code="F6">F6</div>
+                        <div class="key" data-code="F7">F7</div>
+                        <div class="key" data-code="F8">F8</div>
+                        <div class="key f9" data-code="F9">F9</div>
+                        <div class="key" data-code="F10">F10</div>
+                        <div class="key" data-code="F11">F11</div>
+                        <div class="key" data-code="F12">F12</div>
+                    </div>
+                    <div class="main__row">
+                        <div class="key" data-code="Backquote">~<br>`</div>
+                        <div class="key" data-code="Digit1">1</div>
+                        <div class="key" data-code="Digit2">2</div>
+                        <div class="key" data-code="Digit3">3</div>
+                        <div class="key" data-code="Digit4">4</div>
+                        <div class="key" data-code="Digit5">5</div>
+                        <div class="key" data-code="Digit6">6</div>
+                        <div class="key" data-code="Digit7">7</div>
+                        <div class="key" data-code="Digit8">8</div>
+                        <div class="key" data-code="Digit9">9</div>
+                        <div class="key" data-code="Digit0">0</div>
+                        <div class="key" data-code="Minus">—<br>-</div>
+                        <div class="key" data-code="Equal">+<br>=</div>
+                        <div class="key backspace" data-code="Backspace">Backspace</div>
+                    </div>
+                    <div class="main__row">
+                        <div class="key tab" data-code="Tab">Tab</div>
+                        <div class="key" data-code="KeyQ">Q</div>
+                        <div class="key" data-code="KeyW">W</div>
+                        <div class="key" data-code="KeyE">E</div>
+                        <div class="key" data-code="KeyR">R</div>
+                        <div class="key" data-code="KeyT">T</div>
+                        <div class="key" data-code="KeyY">Y</div>
+                        <div class="key" data-code="KeyU">U</div>
+                        <div class="key" data-code="KeyI">I</div>
+                        <div class="key" data-code="KeyO">O</div>
+                        <div class="key" data-code="KeyP">P</div>
+                        <div class="key" data-code="BracketLeft">{<br>[</div>
+                        <div class="key" data-code="BracketRight">}<br>]</div>
+                        <div class="key" data-code="Backslash">|<br>\</div>
+                    </div>
+                    <div class="main__row">
+                        <div class="key caps-lock" data-code="CapsLock">Caps Lock</div>
+                        <div class="key" data-code="KeyA">A</div>
+                        <div class="key" data-code="KeyS">S</div>
+                        <div class="key" data-code="KeyD">D</div>
+                        <div class="key" data-code="KeyF">F</div>
+                        <div class="key" data-code="KeyG">G</div>
+                        <div class="key" data-code="KeyH">H</div>
+                        <div class="key" data-code="KeyJ">J</div>
+                        <div class="key" data-code="KeyK">K</div>
+                        <div class="key" data-code="KeyL">L</div>
+                        <div class="key" data-code="Semicolon">:<br>;</div>
+                        <div class="key" data-code="Quote">"<br>'</div>
+                        <div class="key enter" data-code="Enter">Enter</div>
+                    </div>
+                    <div class="main__row">
+                        <div class="key shift" data-code="ShiftLeft">Shift</div>
+                        <div class="key" data-code="KeyZ">Z</div>
+                        <div class="key" data-code="KeyX">X</div>
+                        <div class="key" data-code="KeyC">C</div>
+                        <div class="key" data-code="KeyV">V</div>
+                        <div class="key" data-code="KeyB">B</div>
+                        <div class="key" data-code="KeyN">N</div>
+                        <div class="key" data-code="KeyM">M</div>
+                        <div class="key" data-code="Comma"><<br>,</div>
+                        <div class="key" data-code="Period">><br>.</div>
+                        <div class="key" data-code="Slash">?<br>/</div>
+                        <div class="key shift" data-code="ShiftRight">Shift</div>
+                    </div>
+                    <div class="main__row">
+                        <div class="key" data-code="ControlLeft">Ctrl</div>
+                        <div class="key" data-code="MetaLeft">Win</div>
+                        <div class="key" data-code="AltLeft">Alt</div>
+                        <div class="key space" data-code="Space">Space</div>
+                        <div class="key" data-code="AltRight">Alt</div>
+                        <div class="key" data-code="KeyM">Fn</div>
+                        <div class="key menu-key" data-code="ContextMenu"></div>
+                        <div class="key" data-code="ControlRight">Ctrl</div>
+                    </div>
+                </div>
+                <div class="keyboard__special">
+                    <div class="special__func">
+                        <div class="special__func-row up-row">
+                            <div class="key" data-code="PrintScreen">PrtSc</div>
+                            <div class="key" data-code="ScrollLock">ScrLk</div>
+                            <div class="key" data-code="Pause">Pause</div>
+                        </div>
+                        <div class="special__func-row">
+                            <div class="key" data-code="Insert">Insert</div>
+                            <div class="key" data-code="Home">Home</div>
+                            <div class="key" data-code="PageUp">PgUp</div>
+                        </div>
+                        <div class="special__func-row">
+                            <div class="key" data-code="Delete">Delete</div>
+                            <div class="key" data-code="End">End</div>
+                            <div class="key" data-code="PageDown">PgDn</div>
+                        </div>
+                    </div>
+                    <div class="special__arrow">
+                        <div class="special__arrow-row-up">
+                            <div class="key arrow-key-up" data-code="ArrowUp"></div>
+                        </div>
+                        <div class="special__arrow-row-dawn">
+                            <div class="key arrow-key-left" data-code="ArrowLeft"></div>
+                            <div class="key arrow-key-down" data-code="ArrowDown"></div>
+                            <div class="key arrow-key-right" data-code="ArrowRight"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard__num">
+                    <div class="num__radio">
+                        <form class="num__radio-form">
+                            <div class="radio-form__item">
+                                <input type="radio" id="num-check">
+                                <label for="num-check">Num</label>
+                            </div>
+                            <div class="radio-form__item">
+                                <input type="radio" id="caps-check">
+                                <label for="caps-check">Caps</label>
+                            </div>
+                            <div class="radio-form__item">
+                                <input type="radio" id="scroll-check">
+                                <label for="scroll-check">Sckroll</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="num__rows">
+                        <div class="num__row">
+                            <div class="key" data-code="NumLock">Num<br>Lock</div>
+                            <div class="key" data-code="NumpadDivide">/</div>
+                            <div class="key" data-code="NumpadMultiply">*</div>
+                            <div class="key" data-code="NumpadSubtract">-</div>
+                        </div>
+                        <div class="num__row-with-plus">
+                            <div class="row-no-plus">
+                                <div class="num__row">
+                                    <div class="key" data-code="Numpad7">7</div>
+                                    <div class="key" data-code="Numpad8">8</div>
+                                    <div class="key" data-code="Numpad9">9</div>
+                                </div>
+                                <div class="num__row">
+                                    <div class="key" data-code="Numpad4">4</div>
+                                    <div class="key" data-code="Numpad5">5</div>
+                                    <div class="key" data-code="Numpad6">6</div>
+                                </div>
+                            </div>
+                            <div class="row-plus">
+                                <div class="key key-num-plus" data-code="NumpadAdd">+</div>
+                            </div>
+                        </div>
+                        <div class="num_row-whith-enter">
+                            <div class="row-no-enter">
+                                <div class="num__row">
+                                    <div class="key" data-code="Numpad1">1</div>
+                                    <div class="key" data-code="Numpad2">2</div>
+                                    <div class="key" data-code="Numpad3">3</div>
+                                </div>
+                                <div class="num__row">
+                                    <div class="key key-zero" data-code="Numpad0">0</div>
+                                    <div class="key" data-code="NumpadDecimal">.</div>
+                                </div>
+                            </div>
+                        <div class="row-enter">
+                                <div class="key key-num-enter" data-code="NumpadEnter">Enter</div>
+                        </div>
+                        </div>    
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+<script src="main.js"></script>
+</body>
+</html>

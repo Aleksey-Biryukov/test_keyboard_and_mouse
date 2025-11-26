@@ -1,0 +1,135 @@
+@import '../variables.css';
+@import 'key.css';
+
+.keyboard-visible{
+    display: block;
+}
+
+.keyboard{
+    background: var(--background-keyboard);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+}   
+
+.keyboard-not-visible{
+    display: none;
+}
+
+.keyboard__main{
+    padding: 10px 0 10px 10px;
+    margin-right: 10px;
+}
+
+.main__row{
+    display: flex;
+}
+
+.keyboard__special{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    margin-right: 10px;
+}
+
+.keyboard__num{
+    padding: 0 10px 10px 0;
+}
+
+.special__func{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.special__func-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.up-row{
+    margin-bottom: 10px;
+}
+
+.special__arrow{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.special__arrow-row-up{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.special__arrow-row-dawn{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.keyboard__num{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.num__row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.num__row-all{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-plus{
+    display: flex;
+    flex-direction: column;
+}
+
+.num__row-with-plus{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.num_row-whith-enter{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.row-enter{
+    display: flex;
+    flex-direction: column;
+}
+
+.num__radio{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}   
+
+.num__radio-form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.radio-form__item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

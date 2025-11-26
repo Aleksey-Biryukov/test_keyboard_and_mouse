@@ -1,0 +1,8 @@
+:root {
+    --background-keyboard: #D0D0D0;
+    --background-key: #F75E25;
+    --active-color: #007c8d;
+    --width-key: 65px;
+    --height-key: 65px;
+}
+

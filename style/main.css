@@ -1,0 +1,73 @@
+@import 'variables.css';
+@import 'reset.css';
+@import './keyboard/keyboard.css';
+@import './mouse/mouse.css';
+
+body{
+    background-image: url('../img/background-textur.png');
+    background-size: cover;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.main__switch{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.button-device {
+    background-color: rgb(113, 138, 146);
+    border: solid 1px black;
+    border-radius: 5px ;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch__button-device-keyboard{
+    background-image: url(../img/icons-keyboard.png);
+    background-size: cover;
+}
+
+.switch__button-device-mouse{
+    background-image: url(../img/icon-mouse.png);
+    background-size: cover;
+}
+
+.main__window-log{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start ;
+    justify-content: center;
+    height: 20px;
+    margin: 10px 50px 10px 50px;
+    gap: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.log-item{
+    width: 140px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    background-color: #3f95a0;
+    align-items: center;
+    justify-content: center;
+}
+
