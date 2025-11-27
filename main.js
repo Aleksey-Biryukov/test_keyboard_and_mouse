@@ -15,11 +15,13 @@ function preventDefault(event) {
     (event.ctrlKey && blocedKey.includes(key)) ||
     event.key === "F1" ||
     event.key === "F3" ||
+    event.key === "F4" ||
     event.key === "F5" ||
     event.key === "F6" ||
     event.key === "F7" ||
     event.key === "F10" ||
     event.key === "F11" ||
+    event.key === "F12" ||
     event.key === "Tab" ||
     event.key === "Alt" ||
     event.key === "PageUp" ||
@@ -165,7 +167,7 @@ function addActiveKeyDownAndAddLog(event) {
   newLogElement.classList.add("log-item");
     if(event.code === 'Space') {
       newLogElement.textContent = 'SPACE'
-    } else if(/[a-z]/g.test(event.key)){
+    } else if((/[a-z]/g.test(event.key) || (/[а-я]/g.test(event.key)))){
       newLogElement.textContent = event.key.toUpperCase();
     } else {
       newLogElement.textContent = event.key
